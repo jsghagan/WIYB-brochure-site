@@ -21,13 +21,14 @@ export default function PricingPage() {
             Compare plans
           </h2>
         </div>
-        <div className="mx-auto mt-8 max-w-2xl overflow-hidden rounded-lg border border-border">
+        <div className="mx-auto mt-8 max-w-3xl overflow-hidden rounded-lg border border-border">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-border bg-muted/60">
                 <th className="px-4 py-3 text-left font-medium">Feature</th>
                 <th className="px-4 py-3 text-center font-medium">Free</th>
-                <th className="px-4 py-3 text-center font-medium">Pro</th>
+                <th className="px-4 py-3 text-center font-medium">Monthly</th>
+                <th className="px-4 py-3 text-center font-medium">Annual</th>
               </tr>
             </thead>
             <tbody>
@@ -39,6 +40,9 @@ export default function PricingPage() {
                   <td className="px-4 py-3 text-center">{row.free}</td>
                   <td className="px-4 py-3 text-center font-medium">
                     {row.pro}
+                  </td>
+                  <td className="px-4 py-3 text-center font-medium">
+                    {row.annual}
                   </td>
                 </tr>
               ))}

@@ -104,9 +104,9 @@ export const PRICING_TIERS = [
     highlighted: false,
   },
   {
-    name: "Pro",
+    name: "Pro Monthly",
     price: "$4.99",
-    period: "one-time",
+    period: "month",
     description: "Unlimited everything for your entire move.",
     features: [
       "Unlimited rooms",
@@ -121,17 +121,35 @@ export const PRICING_TIERS = [
     href: APP_URL,
     highlighted: true,
   },
+  {
+    name: "Pro Annual",
+    price: "$49.99",
+    period: "year",
+    description: "Best value — save over 15% vs. monthly.",
+    features: [
+      "Unlimited rooms",
+      "Unlimited boxes",
+      "100 AI scans per month",
+      "QR code labels",
+      "Household sharing",
+      "Full-text search",
+      "Priority support",
+    ],
+    cta: "Go Annual",
+    href: APP_URL,
+    highlighted: false,
+  },
 ]
 
 export const PRICING_COMPARISON = [
-  { feature: "Rooms", free: "1", pro: "Unlimited" },
-  { feature: "Boxes", free: "5", pro: "Unlimited" },
-  { feature: "AI photo scans", free: "10/month", pro: "100/month" },
-  { feature: "QR code labels", free: "✓", pro: "✓" },
-  { feature: "Household sharing", free: "✓", pro: "✓" },
-  { feature: "Full-text search", free: "✓", pro: "✓" },
-  { feature: "Moving destinations", free: "✓", pro: "✓" },
-  { feature: "Priority support", free: "—", pro: "✓" },
+  { feature: "Rooms", free: "1", pro: "Unlimited", annual: "Unlimited" },
+  { feature: "Boxes", free: "5", pro: "Unlimited", annual: "Unlimited" },
+  { feature: "AI photo scans", free: "10/month", pro: "100/month", annual: "100/month" },
+  { feature: "QR code labels", free: "✓", pro: "✓", annual: "✓" },
+  { feature: "Household sharing", free: "✓", pro: "✓", annual: "✓" },
+  { feature: "Full-text search", free: "✓", pro: "✓", annual: "✓" },
+  { feature: "Moving destinations", free: "✓", pro: "✓", annual: "✓" },
+  { feature: "Priority support", free: "—", pro: "✓", annual: "✓" },
 ]
 
 export const FAQS = [

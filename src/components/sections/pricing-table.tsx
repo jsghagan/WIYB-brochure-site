@@ -24,18 +24,18 @@ export function PricingTable({ showHeading = true }: PricingTableProps) {
         </div>
       )}
 
-      <div className="mx-auto mt-12 grid max-w-3xl gap-6 sm:grid-cols-2">
+      <div className="mx-auto mt-12 grid max-w-5xl items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {PRICING_TIERS.map((tier) => (
-          <Card
-            key={tier.name}
-            className={cn(
-              "relative",
-              tier.highlighted && "border-primary shadow-md"
-            )}
-          >
+          <div key={tier.name} className="relative pt-3">
             {tier.highlighted && (
-              <Badge className="absolute -top-3 right-4">Most Popular</Badge>
+              <Badge className="absolute -top-0 right-4 z-10">Most Popular</Badge>
             )}
+            <Card
+              className={cn(
+                "flex h-full flex-col",
+                tier.highlighted && "ring-primary shadow-md"
+              )}
+            >
             <CardHeader>
               <h3 className="text-lg font-semibold">{tier.name}</h3>
               <div className="mt-2">
@@ -49,7 +49,7 @@ export function PricingTable({ showHeading = true }: PricingTableProps) {
                 {tier.description}
               </p>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex-1">
               <ul className="space-y-3">
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex items-center gap-2 text-sm">
@@ -71,6 +71,7 @@ export function PricingTable({ showHeading = true }: PricingTableProps) {
               </a>
             </CardFooter>
           </Card>
+          </div>
         ))}
       </div>
     </SectionWrapper>
