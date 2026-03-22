@@ -12,7 +12,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { NAV_LINKS, PRO_LINKS, APP_URL } from "@/lib/constants"
+import { NAV_LINKS, PRO_LINKS, SIGNUP_URL } from "@/lib/constants"
 
 export function Header() {
   const [open, setOpen] = useState(false)
@@ -70,7 +70,7 @@ export function Header() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <a href={APP_URL} className={buttonVariants()}>
+          <a href={SIGNUP_URL} className={buttonVariants()}>
             Get Started
           </a>
         </div>
@@ -118,7 +118,7 @@ export function Header() {
                 ))}
               </div>
               <div className="mt-4 px-3">
-                <a href={APP_URL} className={buttonVariants({ className: "w-full" })}>
+                <a href={SIGNUP_URL} className={buttonVariants({ className: "w-full" })}>
                   Get Started
                 </a>
               </div>

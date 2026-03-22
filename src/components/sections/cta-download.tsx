@@ -1,5 +1,5 @@
 import { buttonVariants } from "@/components/ui/button-variants"
-import { APP_URL } from "@/lib/constants"
+import { SIGNUP_URL } from "@/lib/constants"
 
 export function CtaDownload() {
   return (
@@ -14,7 +14,7 @@ export function CtaDownload() {
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href={APP_URL}
+            href={SIGNUP_URL}
             className={buttonVariants({ size: "lg", variant: "secondary" })}
           >
             Get Started Free

@@ -1,5 +1,5 @@
 import { buttonVariants } from "@/components/ui/button-variants"
-import { APP_URL } from "@/lib/constants"
+import { SIGNUP_URL } from "@/lib/constants"
 
 export function Hero() {
   return (
@@ -15,7 +15,7 @@ export function Hero() {
           Never lose track of your stuff again.
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a href={APP_URL} className={buttonVariants({ size: "lg" })}>
+          <a href={SIGNUP_URL} className={buttonVariants({ size: "lg" })}>
             Get Started Free
           </a>
           <a

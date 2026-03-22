@@ -8,6 +8,7 @@ import {
 } from "lucide-react"
 
 export const APP_URL = "https://app.wiyb.app"
+export const SIGNUP_URL = "https://app.wiyb.app/auth/signup"
 export const SUPPORT_EMAIL = "support@wiyb.app"
 export const SITE_NAME = "What's In Your Box?"
 export const SITE_DESCRIPTION =
