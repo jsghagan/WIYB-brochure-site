@@ -104,27 +104,43 @@ export default function PrivacyPage() {
           and we will action it within 30 days.
         </p>
 
-        <h2 className="mt-10 text-xl font-semibold">7. Security</h2>
+        <h2 className="mt-10 text-xl font-semibold">
+          7. Subscriptions &amp; Billing
+        </h2>
+        <p className="mt-3 text-sm text-muted-foreground">
+          What&apos;s In Your Box? offers auto-renewing subscription plans (monthly
+          and annual). Payment is charged to your Apple App Store, Google Play
+          Store, or Stripe account at confirmation of purchase. Subscriptions
+          automatically renew at the end of each billing period unless cancelled
+          at least 24 hours before the end of the current period. You can manage
+          or cancel your subscription at any time through your device&apos;s app
+          store settings or your account settings on the web. We collect and store
+          your subscription status and billing period to provide access to paid
+          features. We do not store credit card numbers or payment details directly
+          — these are handled by Apple, Google, or Stripe.
+        </p>
+
+        <h2 className="mt-10 text-xl font-semibold">8. Security</h2>
         <p className="mt-3 text-sm text-muted-foreground">
           Industry-standard measures include HTTPS encryption, database row-level
           security, and secure credential storage.
         </p>
 
         <h2 className="mt-10 text-xl font-semibold">
-          8. Children&apos;s Privacy
+          9. Children&apos;s Privacy
         </h2>
         <p className="mt-3 text-sm text-muted-foreground">
           This service is not directed at children under 13. We do not knowingly
           collect data from minors.
         </p>
 
-        <h2 className="mt-10 text-xl font-semibold">9. Policy Updates</h2>
+        <h2 className="mt-10 text-xl font-semibold">10. Policy Updates</h2>
         <p className="mt-3 text-sm text-muted-foreground">
           Updates will be noted by revising the effective date. Continued use of
           the service constitutes acceptance of the updated policy.
         </p>
 
-        <h2 className="mt-10 text-xl font-semibold">10. Contact</h2>
+        <h2 className="mt-10 text-xl font-semibold">11. Contact</h2>
         <p className="mt-3 text-sm text-muted-foreground">
           For questions about this privacy policy, contact us at{" "}
           <a

@@ -33,11 +33,36 @@ export default function TermsPage() {
           You are responsible for all activities that occur under your account.
         </p>
 
-        <h2 className="mt-8 text-xl font-semibold">4. Free and Paid Plans</h2>
+        <h2 className="mt-8 text-xl font-semibold">4. Subscriptions &amp; Auto-Renewal</h2>
         <p className="text-muted-foreground">
           The Service offers free and paid plans. Free plans have usage limits on rooms, boxes,
-          and AI scans. Paid plans are billed as one-time purchases or subscriptions as described
-          at the time of purchase. All payments are processed through Stripe.
+          and AI scans.
+        </p>
+        <p className="mt-3 text-muted-foreground">
+          Paid plans are offered as auto-renewing subscriptions at the following intervals:
+        </p>
+        <ul className="mt-2 list-disc space-y-1.5 pl-6 text-muted-foreground">
+          <li><strong className="text-foreground">Monthly:</strong> $4.99 USD per month</li>
+          <li><strong className="text-foreground">Annual:</strong> $49.99 USD per year</li>
+        </ul>
+        <p className="mt-3 text-muted-foreground">
+          Payment is charged to your Apple App Store account, Google Play Store account, or
+          payment method on file (via Stripe on the web) at confirmation of purchase.
+          Subscriptions automatically renew at the end of each billing period at the same
+          price unless you cancel at least 24 hours before the end of the current period.
+        </p>
+        <p className="mt-3 text-muted-foreground">
+          You can manage or cancel your subscription at any time:
+        </p>
+        <ul className="mt-2 list-disc space-y-1.5 pl-6 text-muted-foreground">
+          <li><strong className="text-foreground">iOS:</strong> Settings &gt; Apple ID &gt; Subscriptions</li>
+          <li><strong className="text-foreground">Android:</strong> Google Play Store &gt; Subscriptions</li>
+          <li><strong className="text-foreground">Web:</strong> Account settings within the app</li>
+        </ul>
+        <p className="mt-3 text-muted-foreground">
+          Cancellation takes effect at the end of the current billing period. No refunds are
+          provided for partial billing periods. Free trial periods, if offered, will be
+          forfeited upon purchasing a subscription before the trial ends.
         </p>
 
         <h2 className="mt-8 text-xl font-semibold">5. User Content</h2>
