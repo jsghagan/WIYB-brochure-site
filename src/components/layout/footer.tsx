@@ -14,6 +14,7 @@ const footerLinks = {
     { label: "Realtors", href: "/realtors" },
   ],
   Company: [
+    { label: "Support", href: "/support" },
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Service", href: "/terms" },
   ],
