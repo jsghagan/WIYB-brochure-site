@@ -91,10 +91,10 @@ export default function BrokeragesPage() {
           </p>
           <div className="mt-10">
             <a
-              href={`mailto:${SUPPORT_EMAIL}?subject=Brokerage Inquiry`}
+              href={"https://app.wiyb.app/for-brokerages"}
               className={buttonVariants({ size: "lg" })}
             >
-              Contact Sales
+              Get Started
             </a>
           </div>
         </div>
@@ -151,10 +151,10 @@ export default function BrokeragesPage() {
           </p>
           <div className="mt-8">
             <a
-              href={`mailto:${SUPPORT_EMAIL}?subject=Brokerage Inquiry`}
+              href={"https://app.wiyb.app/for-brokerages"}
               className={buttonVariants({ size: "lg", variant: "secondary" })}
             >
-              Contact Sales
+              Get Started
             </a>
           </div>
         </div>
