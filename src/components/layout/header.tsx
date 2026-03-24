@@ -2,7 +2,8 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Package, Menu, ChevronDown } from "lucide-react"
+import { Menu, ChevronDown } from "lucide-react"
+import { LogoMark } from "@/components/layout/logo-mark"
 import { Button } from "@/components/ui/button"
 import { buttonVariants } from "@/components/ui/button"
 import {
@@ -23,7 +24,7 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 font-semibold">
-          <Package className="h-5 w-5 text-primary" />
+          <LogoMark />
           <span className="hidden sm:inline">What&apos;s In Your Box?</span>
           <span className="sm:hidden">WIYB</span>
         </Link>
@@ -87,7 +88,7 @@ export function Header() {
           <SheetContent side="right" className="w-72">
             <SheetHeader>
               <SheetTitle className="flex items-center gap-2">
-                <Package className="h-5 w-5" />
+                <LogoMark />
                 WIYB
               </SheetTitle>
             </SheetHeader>

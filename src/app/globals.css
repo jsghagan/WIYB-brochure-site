@@ -54,6 +54,32 @@
   --radius: 0.625rem;
 }
 
+/* Logo animation — items fly in, box bounces, two items settle */
+@keyframes logo-item-fly {
+  0%   { transform: translate(var(--tx), var(--ty)); opacity: 1; }
+  55%  { opacity: 1; }
+  100% { transform: translate(0, 0); opacity: 0; }
+}
+
+
+@keyframes logo-box-bounce {
+  0%, 60%  { transform: scale(1); }
+  70%      { transform: scale(1.2); }
+  80%      { transform: scale(0.92); }
+  90%      { transform: scale(1.06); }
+  100%     { transform: scale(1); }
+}
+
+.logo-item {
+  animation: logo-item-fly 520ms cubic-bezier(0.4, 0, 1, 1) both;
+  animation-fill-mode: both;
+}
+
+
+.logo-box {
+  animation: logo-box-bounce 400ms ease-out 1400ms both;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
