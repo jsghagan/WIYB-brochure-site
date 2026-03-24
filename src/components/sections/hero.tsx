@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { buttonVariants } from "@/components/ui/button-variants"
 import { SIGNUP_URL } from "@/lib/constants"
 
@@ -18,12 +19,12 @@ export function Hero() {
           <a href={SIGNUP_URL} className={buttonVariants({ size: "lg" })}>
             Get Started Free
           </a>
-          <a
-            href="#features"
+          <Link
+            href="/getting-started"
             className={buttonVariants({ size: "lg", variant: "outline" })}
           >
             See How It Works
-          </a>
+          </Link>
         </div>
         <p className="mt-4 text-sm text-muted-foreground">
           Available on Web, iOS, and Android
