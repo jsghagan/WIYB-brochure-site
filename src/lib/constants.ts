@@ -178,7 +178,7 @@ export const FAQS = [
   {
     question: "Can I share with family members?",
     answer:
-      "Yes. Go to your Household settings and invite anyone via email. They'll get a link to join and can view and update all your boxes.",
+      "Yes. Go to your Household settings and create an invite link, then share it however you like. Whoever opens it can join and view and update all your boxes.",
   },
   {
     question: "What platforms is it available on?",
