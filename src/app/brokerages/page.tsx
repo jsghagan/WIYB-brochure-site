@@ -8,7 +8,6 @@ import {
 import { buttonVariants } from "@/components/ui/button-variants"
 import { Card, CardContent } from "@/components/ui/card"
 import { SectionWrapper } from "@/components/shared/section-wrapper"
-import { SUPPORT_EMAIL } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "For Brokerages",

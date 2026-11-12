@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "Can I share my boxes with family members?",
-    a: "Yes. Go to Account → Household and invite anyone via email. They'll get a link to join your household and can view and update all your boxes.",
+    a: "Yes. Go to Account → Household and create an invite link, then send it to anyone you like by text, email, or chat. Opening the link lets them join your household and can view and update all your boxes.",
   },
   {
     q: "How do I print QR labels?",

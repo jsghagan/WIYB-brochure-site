@@ -13,7 +13,7 @@ export default function PrivacyPage() {
       <div className="mx-auto max-w-3xl">
         <h1 className="text-3xl font-bold tracking-tight">Privacy Policy</h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          Effective Date: March 5, 2025
+          Effective Date: November 10, 2026
         </p>
         <p className="mt-1 text-sm text-muted-foreground">Operator: OneMotion</p>
 
@@ -36,7 +36,11 @@ export default function PrivacyPage() {
           </li>
           <li>
             <strong className="text-foreground">Usage data:</strong> Basic activity
-            logs for debugging purposes
+            logs and error reports for debugging purposes
+          </li>
+          <li>
+            <strong className="text-foreground">Subscription status:</strong> Your
+            plan and billing period, received from Apple, Google, or Stripe
           </li>
         </ul>
         <p className="mt-3 text-sm text-muted-foreground">
@@ -62,9 +66,8 @@ export default function PrivacyPage() {
 
         <h2 className="mt-10 text-xl font-semibold">3. AI Photo Analysis</h2>
         <p className="mt-3 text-sm text-muted-foreground">
-          Photos sent for AI analysis go to Anthropic solely for item suggestions.
-          Images are not stored by the AI provider and are not used to train their
-          models beyond what is permitted under their terms of service. Photo
+          Photos you choose to analyze are sent to Anthropic solely to generate
+          item suggestions, under Anthropic&apos;s commercial API terms. Photo
           analysis is always optional and user-initiated.
         </p>
 
@@ -78,6 +81,22 @@ export default function PrivacyPage() {
             <strong className="text-foreground">Anthropic:</strong> AI model for
             photo-based suggestions
           </li>
+          <li>
+            <strong className="text-foreground">RevenueCat:</strong> Manages in-app
+            subscriptions purchased through Apple or Google, linked to your account ID
+          </li>
+          <li>
+            <strong className="text-foreground">Stripe:</strong> Payment processing
+            for brokerage and realtor purchases on the web
+          </li>
+          <li>
+            <strong className="text-foreground">Sentry:</strong> Error and crash
+            reporting, which may include your account ID and device details
+          </li>
+          <li>
+            <strong className="text-foreground">Vercel:</strong> Hosting for the
+            web app and this website
+          </li>
         </ul>
         <p className="mt-3 text-sm text-muted-foreground">
           Each provider has independent privacy policies. We select providers
@@ -90,18 +109,29 @@ export default function PrivacyPage() {
           explicitly invite) and with the third-party providers listed above as
           required to operate the service.
         </p>
+        <p className="mt-3 text-sm text-muted-foreground">
+          <strong className="text-foreground">Realtor-sponsored accounts:</strong>{" "}
+          If you joined through an invite from a realtor, that realtor can
+          see your name, your email address, and summary counts of
+          your rooms, boxes, items, and destinations. They cannot see your item
+          names, photos, or box contents. Your sponsoring realtor&apos;s name and
+          brokerage branding are shown in your app.
+        </p>
 
         <h2 className="mt-10 text-xl font-semibold">6. Data Retention</h2>
         <p className="mt-3 text-sm text-muted-foreground">
           Data persists while your account is active. Deleted boxes are permanently
-          removed. To request full account deletion, email us at{" "}
+          removed. You can delete your account at any time from the Account tab in
+          the app, which removes your profile, any household no one else uses, and
+          its photos. You can also email us at{" "}
           <a
             href={`mailto:${SUPPORT_EMAIL}`}
             className="text-foreground underline"
           >
             {SUPPORT_EMAIL}
           </a>{" "}
-          and we will action it within 30 days.
+          and we will action it within 30 days. App store subscriptions must be
+          cancelled separately in your device&apos;s store settings.
         </p>
 
         <h2 className="mt-10 text-xl font-semibold">
